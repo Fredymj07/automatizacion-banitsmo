@@ -1,0 +1,78 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en" class="h-100" dir="ltr"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;<br/>
+  &lt;title&gt;Login App Web Project&lt;/title&gt;&lt;!-- Favicon icon --&gt;<br/>
+  &lt;link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon.png"&gt;<br/>
+  &lt;link href="/static/css/style.css" rel="stylesheet"&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body class="h-100" data-typography="poppins" data-theme-version="light" data-layout="vertical" data-nav-headerbg="color_1" data-headerbg="color_1" data-sidebar-style="full" data-sibebarbg="color_1" data-sidebar-position="fixed" data-header-position="fixed" data-container="wide" direction="ltr"&gt;<br/>
+  &lt;div class="authincation h-100"&gt;<br/>
+   &lt;div class="container-fluid h-100"&gt;<br/>
+    &lt;div class="row justify-content-center h-100 align-items-center"&gt;<br/>
+     &lt;div class="col-md-6"&gt;<br/>
+      &lt;div class="authincation-content"&gt;<br/>
+       &lt;div class="row no-gutters"&gt;<br/>
+        &lt;div class="col-xl-12"&gt;<br/>
+         &lt;div class="auth-form"&gt;<br/>
+          &lt;h4 class="text-center mb-4"&gt;Registra tu cuenta&lt;/h4&gt;<br/>
+          &lt;form method="post" action="/accounts/UserRegister/"&gt;&lt;input type="hidden" name="csrfmiddlewaretoken" value="6fBNimLycv6XGL26vCkrjmXpE5U1EwdrJGKSOkqgLQs8YhKOEu6vuQDt73vLDHbJ"&gt;<br/>
+           &lt;div class="form-group"&gt;<br/>
+            &lt;div class="form-group"&gt;&lt;label class="control-label  " for="id_username"&gt;Nombre de usuario&lt;/label&gt;<br/>
+             &lt;div class=" "&gt;&lt;input type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus class=" form-control" required aria-describedby="id_username_helptext" id="id_username"&gt;<br/>
+              &lt;p class="help-block"&gt;Requerido. 150 carácteres como máximo. Únicamente letras, dígitos y @/./+/-/_&lt;/p&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="form-group"&gt;&lt;label class="control-label  " for="id_password1"&gt;Contraseña&lt;/label&gt;<br/>
+             &lt;div class=" "&gt;&lt;input type="password" name="password1" autocomplete="new-password" class=" form-control" required aria-describedby="id_password1_helptext" id="id_password1"&gt;<br/>
+              &lt;p class="help-block"&gt;&lt;/p&gt;<br/>
+              &lt;ul&gt;<br/>
+               &lt;li&gt;Su contraseña no puede asemejarse tanto a su otra información personal.&lt;/li&gt;<br/>
+               &lt;li&gt;Su contraseña debe contener por lo menos 8 caracteres.&lt;/li&gt;<br/>
+               &lt;li&gt;Su contraseña no puede ser una clave utilizada comúnmente.&lt;/li&gt;<br/>
+               &lt;li&gt;Su contraseña no puede ser completamente numérica.&lt;/li&gt;<br/>
+              &lt;/ul&gt;<br/>
+              &lt;p&gt;&lt;/p&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="form-group"&gt;&lt;label class="control-label  " for="id_password2"&gt;Contraseña (confirmación)&lt;/label&gt;<br/>
+             &lt;div class=" "&gt;&lt;input type="password" name="password2" autocomplete="new-password" class=" form-control" required aria-describedby="id_password2_helptext" id="id_password2"&gt;<br/>
+              &lt;p class="help-block"&gt;Para verificar, ingrese la misma contraseña anterior.&lt;/p&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="form-group"&gt;&lt;label class="control-label  " for="id_first_name"&gt;Nombres&lt;/label&gt;<br/>
+             &lt;div class=" "&gt;&lt;input type="text" name="first_name" maxlength="50" minlength="3" class=" form-control" required id="id_first_name"&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="form-group"&gt;&lt;label class="control-label  " for="id_last_name"&gt;Apellidos&lt;/label&gt;<br/>
+             &lt;div class=" "&gt;&lt;input type="text" name="last_name" maxlength="70" minlength="4" class=" form-control" required id="id_last_name"&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="form-group"&gt;&lt;label class="control-label  " for="id_email"&gt;Email&lt;/label&gt;<br/>
+             &lt;div class=" "&gt;&lt;input type="email" name="email" maxlength="50" class=" form-control" required aria-describedby="id_email_helptext" id="id_email"&gt;<br/>
+              &lt;p class="help-block"&gt;Ingresa tu correo electrónico&lt;/p&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="text-center mt-4"&gt;&lt;button type="submit" class="btn btn-primary btn-block"&gt;Registrarme&lt;/button&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/form&gt;<br/>
+          &lt;div class="new-account mt-3"&gt;<br/>
+           &lt;p&gt;Ya tienes una cuenta? &lt;a class="text-primary" href="/accounts/login/"&gt;Iniciar sesión&lt;/a&gt;&lt;/p&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;&lt;!--**********************************<br/>
+        Scripts<br/>
+    ***********************************--&gt; &lt;!-- Required vendors --&gt;<br/>
+  &lt;script src="/static/js/vendor/global/global.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/static/js/quixnav-init.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/static/js/custom.min.js"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
